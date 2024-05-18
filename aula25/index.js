@@ -15,6 +15,7 @@ const Post = require('./models/Post.js');
 //Rotas
     app.get('/',(req,res)=>{
         Post.all({order: [['id','DESC']]}).then(function(posts){
+            console.log(posts);
             res.render('home', {posts: posts})
         });
     });
