@@ -10,11 +10,11 @@ const Postagem = new Schema({
         type: String,
         required: true
     },
-    descircao: {
+    descricao: {
         type: String,
         required: true
     },
-    consteudo: {
+    conteudo: {
         type: String,
         required: true
     },
@@ -29,4 +29,4 @@ const Postagem = new Schema({
     }
 });
 
-mongoose.model('ppstagens',Postagem);
+mongoose.model('postagens',Postagem);
